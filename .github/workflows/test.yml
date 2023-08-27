@@ -1,0 +1,9 @@
+wget -O w7x64.img https://bit.ly/akuhnetw7X64
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip ngrok-stable-linux-amd64.zip &>/dev/null &
+unzip ngrok-stable-linux-amd64.zip1 &>/dev/null &
+./ngrok authtoken 2EwkVwYFSJGPUOHUCU5vEFdMP9C_2oG7L6YJ2tyBnLBqsSdzG
+nohup ./ngrok tcp 3388 &>/dev/null &
+./ngrok tcp 3388 &>/dev/null &
+apt-get install qemu > /dev/null 2>&1
+curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
